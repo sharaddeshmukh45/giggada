@@ -1,0 +1,435 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0px;
+    margin: 0px;
+    background-color:white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+/*    position: fixed;*/
+    
+}
+header #branding img{
+    width: 300px;
+    float: left;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px; 
+}
+
+nav ul li{
+    
+    display: inline;
+    padding: 0px 20px 0px 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+nav a:hover{
+    color: cornflowerblue;
+}
+
+nav{
+    margin-top: 30px;
+    float: right; 
+}
+
+.showcase{
+    background-image: url('../img/giggada5.jpg');
+     background-size: 100% 100%;
+    min-height: 500px;
+    text-align: center;
+}
+
+.showcase h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.showcase p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#art1 , #art2{
+    display: flex;
+}
+
+#art2{
+    flex-direction: row-reverse;
+}
+
+#art1 div,#art2 div{
+    flex-basis: 50%;
+}
+#art1 img,#art2 img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+#art1 h1,#art2 h1{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+
+#art1 p, #art2 p{
+    margin: 0px;
+    padding: 15px;
+    font-size: 20px;
+    color: dimgray;
+}
+
+#per_bar{
+    display: flex;
+    flex-direction: column;
+}
+
+#per_bar p{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    width: 50%;
+}
+#per_bar div{
+    width: 95%;
+    margin: 5px 10px;
+    background-color: cornflowerblue; 
+}
+
+.bar{
+    animation: bar 1.5s;
+    transition: ease-in;
+    
+}
+
+@keyframes bar{
+    0%{
+       width: 0%; 
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+.box{
+     animation: box 1.5s linear forwards;
+}
+
+@keyframes box {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#service-list h1{
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+#service-list .boxes{
+    display: flex;
+}
+#service-list .box{
+    flex: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+   
+}
+
+
+#service-list .boxes{
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.box .fa_icon{
+    flex: 30%;
+    text-align: center;
+   
+}
+
+.box img{   
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    margin-top: 28%;
+    display: block;
+    
+}
+
+.box .image{
+    border-radius: 100px;
+    border: 1px solid black;
+    overflow: auto;
+    height: 70px;
+    width: 70px;
+}
+
+
+.box .service_data{
+    flex: 70%;
+    margin: 10px;
+}
+
+.box h3{
+    margin-top: 0px;
+}
+
+
+.showcase2{
+    background-image: url(../img/giggada12.jpg);
+    background-size: 100% 100%;
+    min-height: 500px;
+}
+
+.info{
+    margin-top: 10%;
+    width: 25%;
+    text-align: center;
+    color: white;
+    float: left;
+    box-sizing: border-box;
+}
+
+.info h3{
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.info p{
+    font-size: 20px;
+}
+
+#testimoni{
+    text-align: center;
+}
+
+#testimoni h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#testimoni h4,#testimoni p{
+    color: dimgrey;
+}
+
+#testimoni p{
+    margin-top: 0px;
+    font-style: italic;
+    
+}
+
+
+#company{
+    text-align: center;
+}
+
+#company h1{
+     font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#company p{
+    font-size: 20px;
+    color: dimgrey;
+}
+
+
+
+.simple_block > .container{
+    padding-bottom: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+#imgholder{
+    flex: 40%;
+    position: relative;
+    /* width: 40%; */
+    box-sizing: border-box;
+    
+}
+#darkphone{
+    position: relative;
+		top: 0;
+		left: 0;
+}
+#whitephone{
+    position: absolute;
+		top: 60px;
+		left: 50px;
+}
+
+#dataholder{
+    /* width: 40%; */
+    flex: 40%;
+   box-sizing: border-box;
+    margin-left: 5%;
+}
+
+#dataholder h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#dataholder p{
+    color: dimgrey;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#dataholder img{
+    width: 30%;
+}
+
+#quote{
+    margin-top: 20px;
+    display: flex;
+    background-color: cornflowerblue;
+    justify-content: center;
+    text-align: center;
+}
+
+#quote :first-child{
+    color: white;
+    flex: 70%;
+    
+}
+
+#quote :last-child{
+    flex: 30%; 
+}
+#quote h2{
+    font-size: 30px;
+}
+
+#quote input{
+    margin-top: 25px;
+    background-color: cornflowerblue;
+    border: 2px solid white;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+#quote input[type="submit"]:hover{
+    background-color: white;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 3px;
+}
+
+.fed_list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#list_2 , #list_1{
+    flex-basis: 50%;
+}
+
+#contact_details, #phone{
+    display: flex;
+}
+#contact_details div, #phone div{
+    flex-basis: 50%;
+}
+
+#footer_block{
+    background-color: #101010 !important;
+    color: white;
+    padding: 15px 0px;
+}
+
+#list_2 #input{
+    display: flex;   
+}
+
+#list_2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#list_2 div{
+    margin-top: 10px;
+    flex-basis: 50%;
+    
+}
+
+#list_2 textarea{
+    width: 90%;
+    background-color: black;
+    border: 2px solid white;
+    font-size: 1em;
+}
+
+#list_2 input{
+    background-color: black;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 1em;
+}
+
+#list_2 button{
+    background-color: cornflowerblue;
+    width: 30%;
+    border: 1px solid cornflowerblue;
+    border-radius: 3px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#tech_icon img{
+    margin: 10px 0px;
+    width: 100%;
+}
+
+footer , footer p{
+    margin: 0px;
+    color: white;
+    background-color: #101010;
+    text-align: center;
+    
+}
+    
+footer{
+    padding: 40px;
+    border-top: 1px solid black;
+}
