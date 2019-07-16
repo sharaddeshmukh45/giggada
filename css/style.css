@@ -56,18 +56,17 @@ header li{
      background-size: 100% 100%;
     min-height: 500px;
     text-align: center;
+    color: white;
 }
 
 .showcase h1{
-    color: white;
     font-weight: bolder;
     font-size: 70px;
 }
 
 .showcase p{
-    color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #art1 , #art2{
@@ -156,6 +155,7 @@ header li{
     box-sizing: border-box;
    
 }
+
 
 
 #service-list .boxes{
@@ -432,3 +432,45 @@ footer{
     padding: 40px;
     border-top: 1px solid black;
 }
+
+
+@media(max-width:768px){
+    header{
+        display: block;
+        width: 100%;
+        text-align: center;  
+    }
+
+    #art1 , #art2 , .boxes, .box{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;  
+    }
+    .image{
+        margin: auto;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .simple_block > .container ,  .fed_list , #quote , header ul{
+        flex-direction: column;
+    }
+    #per_bar p{
+        width: 100%;
+        text-align: left;
+    }
+
+    #imgholder img{
+        height: 90%;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    #quote input[type="submit"]{
+       margin-bottom: 15px;
+    }
+   
+}
+
