@@ -1,0 +1,134 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0px;
+    margin: 0px;
+    background-color:white;
+}
+
+
+
+#serv_content{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 500px;
+    justify-items: stretch;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+
+    grid-template-areas: 
+        "ecom ecom-img"
+        "brand-img brand"
+        "web web-img"
+        "mob-img mob"
+
+   
+}
+
+.ecommerce{
+    grid-area: ecom;
+}
+
+.ecommerce-img{
+    grid-area: ecom-img;
+}
+
+.branding{
+    grid-area: brand;
+}
+.branding-img{
+    grid-area: brand-img;
+}
+
+.web_design{
+    grid-area: web;
+}
+
+.web_design{
+    grid-area: web-img;
+}
+
+
+.ecommerce , .ecommerce-img{
+   background-color: #64438a;
+   padding-top: 40px;
+   
+}
+
+
+.branding,.branding-img{
+   background-color: #0171a6;
+   padding-top: 40px;
+}
+
+.web_design , .web_design-img{
+    background-color:#59c2bd;
+    padding-top: 40px;
+   
+}
+
+.mob_app , .mob_app-img{
+    background-color: #cbdd87;
+    padding-top: 40px;
+}
+
+.branding h1 , .branding p ,.mob_app h1 ,.mob_app p ,.web_design h1 , .web_design p
+, .ecommerce p , .ecommerce h1{
+    margin: auto;
+    padding-top: 20px;
+    width: 70%;
+}
+
+.branding p , .mob_app p , .web_design p , .ecommerce p{
+    font-size: 20px;
+}
+.branding h1 , .mob_app h1 , .web_design h1 , .ecommerce h1{
+    font-size: 40px;
+    /* font-weight: bolder; */
+}
+
+@media(max-width:768px){
+    #serv_content{
+        grid-template-columns: 100%;
+        
+        /* grid-auto-rows: minmax(1000px , auto); */
+        grid-template-areas: 
+        "ecom "
+       "ecom-img"
+        "brand"
+        "brand-img "
+        "web"
+        "web-img"
+         "mob"
+         "mob-img"
+    }
+
+    .ecommerce{
+        grid-area: ecom;
+    }
+    
+    .ecommerce-img{
+        grid-area: ecom-img;
+    }
+    
+    .branding{
+        grid-area: brand;
+    }
+    .branding-img{
+        grid-area: brand-img;
+    }
+    
+    .web_design{
+        grid-area: web;
+    }
+    
+    .web_design{
+        grid-area: web-img;
+    }
+    
+   
+}
+
+
