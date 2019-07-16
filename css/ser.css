@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0px;
+    margin: 0px;
+    background-color:white;
+}
+
+.box_even , .box_odd{
+    display: flex;
+    flex-basis: 50%;  
+   
+    align-items: center ;
+    text-align: center;
+}
+
+.box_even {
+    flex-direction: row-reverse;
+}
+
+.box_even div, .box_odd div{
+    width: 50%;
+    margin: 0px;
+    min-height: 500px;
+    color: white;
+}
+.box_even p , .box_odd p, .box_even h1 , .box_odd h1{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+
+.ecommerce , .ecommerce-img{
+    background-color: #64438a;
+    padding-top: 40px;
+    
+ }
+ 
+ 
+ .branding,.branding-img{
+    background-color: #0171a6;
+    padding-top: 40px;
+ }
+ 
+ .web_design , .web_design-img{
+     background-color:#59c2bd;
+     padding-top: 40px;
+    
+ }
+ 
+ .mob_app , .mob_app-img{
+     background-color: #cbdd87;
+     padding-top: 40px;
+ }
+ 
+ .branding p , .mob_app p , .web_design p , .ecommerce p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.branding h1 , .mob_app h1 , .web_design h1 , .ecommerce h1{
+    padding-top: 30px;
+    font-size: 40px;
+    /* font-weight: bolder; */
+}
+
+@media(max-width:768px){
+     .box_odd{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .box_even{
+        flex-direction: column-reverse;
+    }
+    .box_even div, .box_odd div{
+        width: 100%;
+        margin: 0px;
+        min-height: 400px;
+        color: white;
+    }
+}
+
